@@ -51,7 +51,7 @@ This can be fixed by adding the path for the migrations folder as an asset to th
 
 By adding the following to the `nest-cli.json` all migration related files will be copied and also trigger a reload on changes if you're using the dev server:
 
-```json
+```javascript
 {
   // other stuff...
   "compilerOptions": {
