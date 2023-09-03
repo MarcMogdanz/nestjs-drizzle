@@ -1,8 +1,8 @@
+import { InjectDatabase } from "@app/database/database.decorator";
+import { schema } from "@app/database/schema";
 import { Body, Controller, Get, Post } from "@nestjs/common";
 import { InferInsertModel, InferSelectModel } from "drizzle-orm";
 import { PostgresJsDatabase } from "drizzle-orm/postgres-js";
-import { InjectDatabase } from "src/database/database.decorator";
-import { schema } from "src/database/schema";
 import { CreateMessageInput } from "./dto";
 
 @Controller("messages")
