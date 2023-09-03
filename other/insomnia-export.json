@@ -1,0 +1,92 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2023-09-03T13:10:52.596Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.7",
+  "resources": [
+    {
+      "_id": "req_f5cd9737dc70461ba0de6ef518c06cad",
+      "parentId": "wrk_7cd923931ace4916a788486b2420228e",
+      "modified": 1693744692327,
+      "created": 1693744653401,
+      "url": "http://localhost:3000/messages",
+      "name": "/messages",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [{ "name": "User-Agent", "value": "Insomnia/2023.5.7" }],
+      "authentication": {},
+      "metaSortKey": -1693744653401,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_7cd923931ace4916a788486b2420228e",
+      "parentId": null,
+      "modified": 1693744630154,
+      "created": 1693744630154,
+      "name": "nestjs drizzle",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_51e35752b9844361bbcc8f0a8ec3b0d1",
+      "parentId": "wrk_7cd923931ace4916a788486b2420228e",
+      "modified": 1693744887557,
+      "created": 1693744878423,
+      "url": "http://localhost:3000/messages",
+      "name": "/messages",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"message\": \"Hello world\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "Insomnia/2023.5.7" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1693704614868,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_678837e66e79964ddae7335d01dc476fbef43d2f",
+      "parentId": "wrk_7cd923931ace4916a788486b2420228e",
+      "modified": 1693744630164,
+      "created": 1693744630164,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1693744630164,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_678837e66e79964ddae7335d01dc476fbef43d2f",
+      "parentId": "wrk_7cd923931ace4916a788486b2420228e",
+      "modified": 1693744630166,
+      "created": 1693744630166,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
