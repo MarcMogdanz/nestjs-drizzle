@@ -33,17 +33,17 @@ If you're still developing and sync your schema to your local database you can u
 
 In case you're just copy pasting some parts of the code here, there are a few things that need to be considered.
 
-### Error: `TypeError: (0 , postgres_1.default) is not a function`
+**Error: `TypeError: (0 , postgres_1.default) is not a function`**
 
 Set `esModuleInterop` to `true` in your `tsconfig.json`, see [docs](https://typescriptlang.org/tsconfig#esModuleInterop).
 
-### Can't find the `meta/_journal.json` file
+**Can't find the `meta/_journal.json` file**
 
 By default the `src/` directory is the main folder from where the project is being built. This means the `dist/` and `src/` folders should have the same structure. Because we add the `drizzle.config.ts` config to our root it now may shifts the `src/` folder to `dist/src/` when building the project as it considers the `drizzle.config.ts` file as part of the source code. Basically instead of `dist/database/migrations/...` you now end up with `dist/src/database/migrations/...`.
 
 This can be fixed by adding the `drizzle.config.ts` to the `exclude` array of your tsconfig which is being used for building, usually `tsconfig.build.json`.
 
-### The `database/migrations` folder is showing up in the built project
+**The `database/migrations` folder is not showing up in the `dist` output**
 
 By default NestJs only copies all files which have been compiled and ignores all other files. Because the migrations are stored as `*.sql` and drizzle metadata as `*.json` files they won't be copied to the `dist/` folder.
 
